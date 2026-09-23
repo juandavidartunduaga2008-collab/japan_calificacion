@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Califica nuestra exposición</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="tarjeta">
+
+            <h1>Califica nuestra exposición</h1>
+            <p class="subtitulo">
+                Tu opinión nos ayuda a mejorar
+            </p>
+
+            <div class="grupo">
+                <label>Nombre del grupo (país)</label>
+                <input type="text" id="grupo" placeholder="Escribe el nombre del grupo">
+            </div>
+
+            <div class="grupo">
+                <label>¿Cómo calificas la exposición?</label>
+
+                <div class="estrellas" id="estrellas">
+                    <span data-value="1">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="5">★</span>
+                </div>
+
+                <p id="textoCalificacion">Selecciona una calificación</p>
+            </div>
+
+            <div class="grupo">
+                <label>Claridad al explicar</label>
+                <select id="claridad">
+                    <option value="">Selecciona</option>
+                    <option>Excelente</option>
+                    <option>Muy buena</option>
+                    <option>Buena</option>
+                    <option>Regular</option>
+                    <option>Debe mejorar</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label>Dominio del tema</label>
+                <select id="dominio">
+                    <option value="">Selecciona</option>
+                    <option>Excelente</option>
+                    <option>Muy bueno</option>
+                    <option>Bueno</option>
+                    <option>Regular</option>
+                    <option>Debe mejorar</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label>Presentación y material visual</label>
+                <select id="presentacion">
+                    <option value="">Selecciona</option>
+                    <option>Excelente</option>
+                    <option>Muy buena</option>
+                    <option>Buena</option>
+                    <option>Regular</option>
+                    <option>Debe mejorar</option>
+                </select>
+            </div>
+
+            <div class="grupo">
+                <label>Comentario</label>
+                <textarea id="comentario" placeholder="Escribe tu opinión sobre la exposición..."></textarea>
+            </div>
+
+            <button id="btnEnviar">Enviar calificación</button>
+
+            <div id="mensaje" class="mensaje"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

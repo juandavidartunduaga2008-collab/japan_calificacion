@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 600px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.grupo {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #333;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.estrellas {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.estrellas span {
+    font-size: 42px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.estrellas span:hover {
+    transform: scale(1.15);
+}
+
+.estrellas span.activa {
+    color: #ffc107;
+}
+
+#textoCalificacion {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #444;
+}
+
+.mensaje {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 9px;
+    text-align: center;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .tarjeta {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .estrellas span {
+        font-size: 35px;
+    }
+}
